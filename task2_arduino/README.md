@@ -21,7 +21,7 @@ This project controls a servo motor using a potentiometer.
 - 70° → Servo stops at 68°, LED ON
 
 ## Tinkercad Link
-(Add your link here)
+[SIMULATION LINK] (https://www.tinkercad.com/things/l0tsE5H0gUY/editel?sharecode=9Z9AHgdBax_Z2CllT6nCWsoLEQa15qdDXdVqJ2VG3LE)
 
 ## Video
-(Add your video link here)
+[PROJECT DEMO VIDEO LINK] (https://drive.google.com/file/d/17Ctn3ilfuWv5UdQA9g4nA3WO6IB5b8FS/view?usp=sharing)
