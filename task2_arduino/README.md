@@ -109,16 +109,16 @@ void loop() {
 
 ## 🎬 Demo Video
 
-```
+
 [PROJECT DEMO VIDEO] (https://drive.google.com/file/d/17Ctn3ilfuWv5UdQA9g4nA3WO6IB5b8FS/view?usp=sharing)
-```
+
 
 ---
 
 ## 🔌 Circuit Diagram
 
 
-[CIRCUIT DISGRAM.pdf](https://github.com/user-attachments/files/26167749/CIRCUIT.DISGRAM.pdf)
+<img width="885" height="652" alt="Screenshot 2026-03-22 225046" src="https://github.com/user-attachments/assets/aa3da45b-e911-49ce-8beb-96b0c5b7b66a" />
 
 
 
