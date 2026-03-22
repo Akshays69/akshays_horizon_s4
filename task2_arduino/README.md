@@ -118,14 +118,16 @@ void loop() {
 ## 🔌 Circuit Diagram
 
 ```
-[CIRCUIT DISGRAM.pdf](https://github.com/user-attachments/files/26167043/CIRCUIT.DISGRAM.pdf)
+[CIRCUIT DISGRAM.pdf](https://github.com/user-attachments/files/26167749/CIRCUIT.DISGRAM.pdf)
+
 ```
 
 ---
 ### 🖼️ Circuit Image
 ```
 
-<img width="1280" height="494" alt="Terrific Sango" src="https://github.com/user-attachments/assets/6c14336f-2d73-45eb-91b2-003c7fdb4ecb" />
+<img width="1280" height="494" alt="Terrific Sango" src="https://github.com/user-attachments/assets/865fc866-46f0-4641-8140-5d5fdbeefa90" />
+
 
 ```
 
