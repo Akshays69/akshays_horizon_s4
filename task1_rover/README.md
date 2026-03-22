@@ -18,7 +18,7 @@ This project implements a **C console program** that:
 ## 📁 Source File
 
 ```id="k3w9f2"
-rover.c
+task1_rover/rover.c
 ```
 
 ---
