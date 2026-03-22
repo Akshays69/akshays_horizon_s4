@@ -16,9 +16,8 @@ An **LED is used as an indicator** when the input exceeds the safe range.
 ## 📁 Source File
 
 ```
-code/servo_control.ino
 ```
-
+https://www.tinkercad.com/things/l0tsE5H0gUY/editel?sharecode=9Z9AHgdBax_Z2CllT6nCWsoLEQa15qdDXdVqJ2VG3LE
 ---
 
 ## 🔧 Components Used
@@ -119,14 +118,13 @@ void loop() {
 ## 🔌 Circuit Diagram
 
 ```
-```[Terrific Sango.pdf](https://github.com/user-attachments/files/26166970/Terrific.Sango.pdf)
+[CIRCUIT DISGRAM.pdf](https://github.com/user-attachments/files/26167043/CIRCUIT.DISGRAM.pdf)
 
 
 ---
+### 🖼️ Circuit Image
 
-## 🖼️ Circuit Image
-
-```<img width="1280" height="494" alt="Terrific Sango" src="https://github.com/user-attachments/assets/b724bfd0-90ed-414d-a73e-ac6849bfa7c4" />
+<img width="1280" height="494" alt="Terrific Sango" src="https://github.com/user-attachments/assets/6c14336f-2d73-45eb-91b2-003c7fdb4ecb" />
 
 ```
 
