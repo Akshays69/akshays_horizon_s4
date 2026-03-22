@@ -15,15 +15,6 @@ This project implements a **C console program** that:
 
 ---
 
-## 📁 Source File
-
-```id="k3w9f2"
-[rover.c](https://github.com/user-attachments/files/26167677/rover.c)
-
-```
-
----
-
 ## 🧾 What the Program Does
 
 The program prompts the user for:
