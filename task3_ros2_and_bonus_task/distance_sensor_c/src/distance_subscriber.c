@@ -5,19 +5,16 @@
 
 int main(int argc, char * argv[])
 {
-    // INIT
     rcl_init_options_t init_options = rcl_get_zero_initialized_init_options();
     rcl_init_options_init(&init_options, rcl_get_default_allocator());
 
     rcl_context_t context = rcl_get_zero_initialized_context();
     rcl_init(argc, argv, &init_options, &context);
 
-    // NODE
     rcl_node_t node = rcl_get_zero_initialized_node();
     rcl_node_options_t node_ops = rcl_node_get_default_options();
     rcl_node_init(&node, "distance_subscriber", "", &context, &node_ops);
 
-    // SUBSCRIBER
     rcl_subscription_t subscriber = rcl_get_zero_initialized_subscription();
     rcl_subscription_options_t sub_ops = rcl_subscription_get_default_options();
 
