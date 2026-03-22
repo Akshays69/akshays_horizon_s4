@@ -65,32 +65,52 @@ Publisher → Topic → Subscriber
 
 ### 🔹 Publisher Node (`publisher.c`)
 
-```python id="6f2n8k"
-import rclpy
-from rclpy.node import Node
-from std_msgs.msg import Int32
-import random
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <time.h>
 
-class DistancePublisher(Node):
-    def __init__(self):
-        super().__init__('distance_publisher')
-        self.publisher_ = self.create_publisher(Int32, 'distance', 10)
-        self.timer = self.create_timer(1.0, self.publish_distance)
+#include "rcl/rcl.h"
+#include "std_msgs/msg/float32.h"
 
-    def publish_distance(self):
-        msg = Int32()
-        msg.data = random.randint(0, 100)
-        self.publisher_.publish(msg)
-        self.get_logger().info(f'Publishing: {msg.data}')
+int main(int argc, char * argv[])
+{
+    rcl_init_options_t init_options = rcl_get_zero_initialized_init_options();
+    rcl_init_options_init(&init_options, rcl_get_default_allocator());
 
-def main(args=None):
-    rclpy.init(args=args)
-    node = DistancePublisher()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
-```
+    rcl_context_t context = rcl_get_zero_initialized_context();
+    rcl_init(argc, argv, &init_options, &context);
 
+    rcl_node_t node = rcl_get_zero_initialized_node();
+    rcl_node_options_t node_ops = rcl_node_get_default_options();
+    rcl_node_init(&node, "distance_publisher", "", &context, &node_ops);
+
+    rcl_publisher_t publisher = rcl_get_zero_initialized_publisher();
+    rcl_publisher_options_t pub_ops = rcl_publisher_get_default_options();
+
+    rcl_publisher_init(
+        &publisher,
+        &node,
+        ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Float32),
+        "distance",
+        &pub_ops
+    );
+
+    std_msgs__msg__Float32 msg;
+    srand(time(NULL));
+
+    while (1)
+    {
+        msg.data = ((float)rand() / RAND_MAX) * 100;
+
+        rcl_publish(&publisher, &msg, NULL);
+        printf("Publishing: %.2f\n", msg.data);
+
+        sleep(1);
+    }
+
+    return 0;
+}
 ---
 
 ### 🔹 Subscriber Node (`subscriber.c`)
