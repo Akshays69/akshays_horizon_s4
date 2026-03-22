@@ -111,6 +111,7 @@ int main(int argc, char * argv[])
 
     return 0;
 }
+```
 ---
 
 ### 🔹 Subscriber Node (`subscriber.c`)
@@ -157,7 +158,7 @@ int main(int argc, char * argv[])
 
     return 0;
 }
-
+```
 ---
 
 ## ⚙️ Build and Execution
