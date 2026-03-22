@@ -64,7 +64,7 @@ Publisher → Topic → Subscriber
 ---
 
 ### 🔹 Publisher Node (`publisher.c`)
-
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -114,7 +114,7 @@ int main(int argc, char * argv[])
 ---
 
 ### 🔹 Subscriber Node (`subscriber.c`)
-
+```
 #include <stdio.h>
 
 #include "rcl/rcl.h"
