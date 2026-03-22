@@ -243,14 +243,6 @@ Received: 12
 
 ---
 
-## 📸 Output Proof
-
-All proof files are stored in:
-
-```id="r6x1nb"
-output/
-```
-
 Includes:
 
 * Ubuntu installation screenshot
