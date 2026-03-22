@@ -17,7 +17,6 @@ int main(int argc, char * argv[])
     rcl_node_options_t node_ops = rcl_node_get_default_options();
     rcl_node_init(&node, "decision_node", "", &context, &node_ops);
 
-    // Subscriber
     rcl_subscription_t subscriber = rcl_get_zero_initialized_subscription();
     rcl_subscription_options_t sub_ops = rcl_subscription_get_default_options();
 
@@ -29,7 +28,6 @@ int main(int argc, char * argv[])
         &sub_ops
     );
 
-    // Publisher
     rcl_publisher_t publisher = rcl_get_zero_initialized_publisher();
     rcl_publisher_options_t pub_ops = rcl_publisher_get_default_options();
 
